@@ -1,0 +1,15 @@
+.body {
+    margin: 0px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.container >img{
+    display: flex;
+    justify-content: center;
+    margin-left: 28rem;
+    width: 350px;
+}

@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+.body {
+    margin-top: -1rem;
+    position:fixed;
+    z-index: -1;
+    width: 1300px;
+    height: 600px;
+    
+    
+    
+}
+.logo {
+    margin-left: 0rem;
+    color: white;
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+.nav {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 2rem;
+    color: white;
+    
+
+}
+.nav-content > a {
+    color:yellow;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 2px 1px 1px black;
+    font-size: 125%;
+    
+
+}
+.centre {
+    margin-left: -30rem;
+    transform: translate(50%);
+    color: white;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: -4rem;
+}
+.centre > h3 {
+    font-weight: bolder;
+    font-size: 5rem;
+    
+    margin-left: 13rem;
+    margin-top :9rem;
+    color:#ffffff;
+    text-shadow: 4px 4px 7px black;
+}
+
+
+.centre {
+    font-family: Arial;
+    font-size: 60px;
+    animation: fadeIn 5s;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30rem;
+  }
+  .responsive {
+    margin-top: 2rem;
+  }
+  
+.w3-bar w3-black w3-hide-small{
+  margin-top: 3rem;
+  background-color: black;
+  width: 200rem;
+  height: 25rem;
+  
+}
+.nav-end{
+  margin-top: 2rem;
+}
+.nav-end >h3 {
+  margin-left: 25rem;
+}
+.nav-end >button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.query {
+  background-color: #FFCE54;
+  height: 12rem;
+  
+}
+.query >h1{
+  display: flex;
+  justify-content: center;
+  margin-left: -22rem;
+}
+.query>p{
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.query >a  {
+  display: flex;
+  justify-content: center;
+  text-decoration-color: white;
+  margin-left: 60rem;
+  margin-top: -5rem;
+}

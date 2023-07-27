@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./Styles/Contacts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      </style>
+</head>
+<body>
+    <img class="body" src="./images/image1.jpg"/>
+    <div class="nav">
+            <div class="logo"><img src="./images/logo (2).png"></div>
+            <div class="nav-content">
+                <a href="./index.html">Home</a>
+                <a href="./About.html">About</a>
+                <a href="./Services.html">Services</a>
+                <a href="#">Contact</a>
+            </div>
+    </div>
+    <div class="centre">
+        <h3>Contact Us</h3>
+    </div>
+  
+      </head>
+      <body>
+      <div class="container">
+        <h3>Contact Form</h3>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="E-mail">E-mail</E-mail></label>
+          <input type="text" id="email" name="E-mail" placeholder="Your E-mail..">
+        
+            
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+      
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="logo.jpg">
+        <title>Kongu Printzone</title>
+        <style>
+            body{
+                font-family: "Times New Roman", Times, serif;
+            }
+            p{
+                font-size: 25px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 25px;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: grey;
+                color:blue;
+                transition: transform .2s;
+                transform: scale(1.2); 
+            }
+            .zoom {
+                background-color: aqua;
+                transition: transform .2s;
+                width: 200px;
+                margin: 0 auto;
+                border-radius:25px;
+            }
+            .zoom:hover {
+                -ms-transform: scale(1.5); /* IE 9 */
+                -webkit-transform: scale(1.5); /* Safari 3-8 */
+                transform: scale(1.5); 
+            }
+            a:link { text-decoration: none; }
+            @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Times New Roman", Times, serif;
+            }
+            body{
+                background: white;
+            }
+            section{
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            section:nth-child(1){
+                color: black;
+            }
+            
+            section .container{
+                margin: 100px;
+            }
+            section h1{
+                font-size: 3rem;
+                margin: 20px;
+            }
+            section h2{
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            section .text-container{
+                display: flex;
+            }
+            section .text-container .text-box{
+                margin: 20px;
+                padding: 20px;
+                border-radius: 25px;
+            }
+            section .text-container .text-box h3{
+                font-size: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: 900px){
+                section h1{
+                    font-size: 2rem;
+                    text-align: center;
+            }
+            section .text-container{
+                flex-direction: column;
+                }
+            }
+
+            .reveal{
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 1s all ease;
+            }
+
+            .reveal.active{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            footer {   
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        </style>
+        <script>
+            function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+
+            window.addEventListener("scroll", reveal);
+        </script>
+    </head>
+    <body>
+        
+        <br><h1 style = "color:royalblue"><center><em>Kongu Printzone</em></center></h1><br>
+        <ul>
+            <li><a class="active" href="Home.html">Home</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Features.html">Features</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li style = "float:right"><a href="About Us.html" >About Us</a></li>
+            <li style = "float:right"><a href="Contact.html" >Contact</a></li>
+        </ul><br>
+        <h1 style = "color:grey"><center><em>Scroll It Down</em></center></h1>
+        <section>
+            <div class="container reveal">
+                <h2 style = "color:green"><em>Books<center><hr style = "width:13%; height:3px; background-color:red"></center></em></h2>
+                <div class="text-container">
+                <div class="text-box">
+                    <img src = "book.jpg" style = "width:100%;border-radius: 25px;">
+                </div>
+                <div class="text-box">
+                    <p style = "margin-top: 50%; color:blue">
+                        <em>We are here to print the large number of books in a numerous ways that are needed.</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+          
+          
+        <section>
+            <div class="container reveal">
+              <h2 style = "color:green"><em>Project Reports<center><hr style = "width:30%; height:3px; background-color:red"></center></em></h2>
+              <div class="text-container">                
+                <div class="text-box">
+                    <p style = "margin-top: 50%; color:blue"">
+                        <em>A numerous way of project reports can be made here on different occasions.</em>
+                    </p>
+                </div>
+                <div class="text-box">
+                  <img src = "spiral books.png" style = "width:100%;border-radius: 25px;">
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container reveal">
+                <h2 style = "color:green"><em>Bussiness Cards<center><hr style = "width:30%; height:3px; background-color:red"></center></em></h2>
+                <div class="text-container">
+                <div class="text-box">
+                    <img src = "Visiting card.png"  style = "width:100%;border-radius: 25px;">
+                </div>
+                <div class="text-box">
+                    <p style = "margin-top: 80%; color:blue"">
+                        <em>Let everyone know about your bussiness in a simple card.</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+          
+          
+        <section>
+            <div class="container reveal">
+              <h2 style = "color:green"><em>Certificates<center><hr style = "width:25%; height:3px; background-color:red"></center></em></h2>
+              <div class="text-container">
+                <div class="text-box">
+                <p style = "margin-top: 80%; color:blue"">
+                    <em>For any competitions caertificates and posters can be printed here</em>
+                </p>
+                </div>
+                <div class="text-box">
+                  <img src = "Certificates.png" style = "width:100%;border-radius: 25px;">
+                </div>
+            </div>
+        </section>          
+          
+          
+        <section>
+            <div class="container reveal">
+              <h2 style = "color:green"><em>Greeting Cards<center><hr style = "width:30%; height:3px; background-color:red"></center></em></h2>
+              <div class="text-container">
+                <div class="text-box">
+                  <img src = "Greetings card.png" style = "width:100%;border-radius: 25px;">
+                </div>
+                <div class="text-box">
+                  <p style = "margin-top: 80%; color:blue"">
+                    <em>Huge Amount of books can be printed here with discounts and offers.</em>
+                  </p>
+                </div>
+            </div>
+        </section>
+          
+          
+        <section>
+            <div class="container reveal">
+              <h2 style = "color:green"><em>Wedding Invitations<center><hr style = "width:38%; height:3px; background-color:red"></center></em></h2>
+              <div class="text-container">
+                <div class="text-box">
+                <p style = "margin-top: 80%; color:blue"">
+                    <em>Different types of printing wedding invations are welcomed here..</em>
+                </p>
+                </div>
+                <div class="text-box">
+                  <img src = "wedding invitations.png" style = "width:100%;height: 100%; border-radius: 25px;">
+                </div>
+            </div>
+        </section>  
+
+
+    </body>
+
+    
+    <footer>
+        <h3><em>&copy; reserved by Kongu Printzone</em></h3>
+    </footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-slide ">
+    <img class="mySlides" src="./images/a5.jpg" >
+    <img class="mySlides" src="./images/a7.jpg" >
+    <img class="mySlides" src="./images/a9.jpg" >
+  </div>
+
+
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    
+    
+    </script>
+    

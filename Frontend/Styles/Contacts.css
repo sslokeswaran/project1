@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+.body {
+    margin-top: -1rem;
+    background-repeat: no-repeat;
+    position:fixed;
+    z-index: -1;
+    width: 1300px;
+    height: 600px;
+    
+}
+.logo {
+    margin-left: 0rem;
+    color: white;
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+.nav {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 2rem;
+    color: white;
+
+
+}
+.nav-content > a {
+    color: yellow;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px black;
+    font-size: 125%;
+
+}
+.centre {
+    margin-left: -30rem;
+    transform: translate(50%);
+    color: white;
+    width: auto;
+    height: auto;
+    position: absolute;
+
+}
+.centre > h3 {
+    font-weight: bolder;
+    font-size: 6rem;
+    
+    margin-left: 26rem;
+    margin-top :9rem;
+    color: aqua;
+    text-shadow: 4px 4px 7px black;
+}
+
+
+.centre {
+    font-family: Arial;
+    font-size: 60px;
+    animation: fadeIn 5s;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30rem;
+    
+
+}
+.h3 {
+    margin-left: 5rem;
+}

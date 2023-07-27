@@ -1,0 +1,36 @@
+.body{
+    margin: 0px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1.5rem;
+    
+
+}
+
+.nav-content {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    background-color: black;
+    
+
+
+}
+.nav-content > a {
+    color: yellow;
+    cursor: pointer;
+    text-decoration: none;
+}
+.row g-3 needs-validation {
+    width: 5rem;
+}
+.col-md-4 {
+
+    margin-top: 6rem;
+}
